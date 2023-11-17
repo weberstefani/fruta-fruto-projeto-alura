@@ -1,0 +1,79 @@
+:root {
+    --texto-banner: #FFFFFF;
+    --cor-titulo-descricao: #8D0606;
+    --cor-texto-descricao: #8c8888;
+
+    --fonte-principal: Pacifico;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner__imagem {
+    background: url(../../assets/img/banner.jpg) no-repeat center / cover;
+    height: calc(100vh - 72px);
+    width: 100%;
+}
+
+.banner__titulo {
+    font-family: var(--fonte-principal), cursive;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.75);
+    color: var(--texto-banner);
+    font-weight: 400;
+    text-align: center;
+    font-size: 5.0625rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.sobre {
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.sobre__titulo {
+    color: var(--cor-titulo-descricao);
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 3.18rem;
+}
+
+.sobre__descricao {
+    color: var(--cor-texto-descricao);
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+
+@media screen and (min-width: 0) {
+    .sobre {
+        padding: 2.5rem 1rem;
+    }
+
+    .sobre__titulo {
+        font-size: 2rem;
+    }
+
+    .sobre__descricao {
+        font-size: 1.3rem;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .sobre {
+        padding: 2.5rem;
+    }
+
+    .sobre__titulo {
+        font-size: 3.1875rem;
+    }
+
+    .sobre__descricao {
+        font-size: 1.75rem;
+    }
+}
